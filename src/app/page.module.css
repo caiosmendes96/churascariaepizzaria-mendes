@@ -18,15 +18,11 @@
 }
 
 .main {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
   background-color: var(--foreground);
-  padding: 120px 60px;
+}
+
+.title{
+  color: black;
 }
 
 .intro {
@@ -106,10 +102,379 @@ a.secondary {
   }
 }
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
   }
+
+  .page {
+    --background: #cfcfcc;
+    --foreground: #e7e7dd;
+
+    --text-primary: #000000;
+    --text-secondary: #000000;
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+    --button-secondary-border: #1a1a1a;
+  }
+}
+
+.extern_callToAction{
+  padding: 10px;
+}
+.callToAction {
+  background: linear-gradient(135deg, #ff1100, #ff3d00);
+  color: white;
+  padding: 18px 28px;
+  border-radius: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 20px rgba(255, 94, 0, 0.4);
+  margin: 25px auto;
+  width: fit-content;
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+.callToAction:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 28px rgba(255, 94, 0, 0.55);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Efeito de pulso leve */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.opcoes {
+  text-align: center;
+  margin-top: 30px;
+  margin:auto;
+  max-width: 800px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  padding: 10px;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: beige;
+  width: 180px;
+  height: 180px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(255, 80, 0, 0.4);
+}
+
+/* IMAGEM */
+.img {
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: filter 0.3s ease;
+}
+.img_location {
+  width: 50%;
+  object-fit: cover;
+}
+
+.card:hover .img {
+  filter: brightness(1);
+}
+
+.pizza_salgada{
+  width:130px;
+  height:140px;
+  object-fit: cover;
+  padding-top: 10px;
+}
+.calzone{
+  width:130px;
+  height:130px;
+  object-fit: cover;
+  padding-top: 10px;
+}
+.esfiha_salgada{
+  width:160px;
+  height:130px;
+  padding-top: 20px;
+}
+.esfiha_doce{
+  width:140px;
+  height:140px;
+  padding-top: 10px;
+  object-fit: contain;
+}
+.espetinho{
+  width:140px;
+  height:140px;
+  object-fit: cover;
+  padding-top: 10px;
+}
+.churrasco{
+  width:140px;
+  height:140px;
+  object-fit: contain;
+  padding-top: 10px;
+}
+/* LABEL */
+.label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3px;
+  background: rgba(148, 2, 2, 0.997);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.parallaxContainer {
+  height: 300px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.parallaxImg {
+  width: 100%;
+  transform: translateY(-20px);
+  animation: parallaxScroll 8s ease-in-out infinite alternate;
+}
+
+@keyframes parallaxScroll {
+  to {
+    transform: translateY(20px);
+  }
+}
+.background_location {
+  background: #5e0101;
+}
+.background_funcionamento {
+  background: #e0e0e0;
+}
+.locationSection {
+  margin-top: 50px;
+  text-align: center;
+  margin:auto;
+  
+}
+
+.locationTitle {
+  color:white;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.address {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.horario_funcionamento{
+  display: flex;
+  color:black;
+}
+.div3{
+  display: flex;;
+}
+/* Container principal para centralizar e dar um respiro */
+.horario_funcionamento {
+  margin: auto; /* Centraliza horizontalmente e adiciona margem */
+  padding: 20px;
+  max-width: 400px;
+}
+.horariosLista {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+
+  font-size: 18px;
+}
+/* Estilo para o título */
+.title_h1 {
+  text-align: center;
+  color: #ffffff; /* Cor escura para o texto */
+  font-size: 2.6em; /* Tamanho maior */
+  padding: 30px;
+}
+.title_h1_dark {
+  text-align: center;
+  color: #000000; /* Cor escura para o texto */
+  font-size: 2.6em; /* Tamanho maior */
+  padding: 30px;
+
+}
+.title_h2 {
+  text-align: center;
+  color: #000000; /* Cor escura para o texto */
+  font-size: 2.2em; /* Tamanho maior */
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.sub_title{
+  text-align: center;
+  color: #ffffff; /* Cor escura para o texto */
+  font-size: 2.2em; /* Tamanho maior */
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+.sub_sub_title{
+  text-align: center;
+  color: #ffffff; /* Cor escura para o texto */
+  font-size: 1.8em; /* Tamanho maior */
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.title_button{
+  text-align: center;
+  color: #fad400; /* Cor escura para o texto */
+  font-size: 1.8em; /* Tamanho maior */
+
+}
+
+/* Estilo da lista de horários */
+.horario_funcionamento ul:first-child {
+  list-style: none; /* Remove os marcadores de lista padrão */
+  padding: 0;
+}
+
+/* Estilo para cada item da lista (dia e horário) */
+.horario_funcionamento li {
+  display: flex; /* Permite que o dia e o horário fiquem na mesma linha */
+  justify-content: space-between; /* Empurra o horário para a direita */
+  padding: 8px 0;
+  font-size: 1.4em;
+  border-bottom: 1px dashed #eee; /* Linha tracejada separando os dias */
+}
+
+/* Estilo especial para o dia de folga (Fechado) */
+.horario_funcionamento li:nth-child(4) { /* Terça-feira é o 3º item */
+  color: #a83232; /* Cor de destaque (vermelho) */
+  font-weight: bold;
+}
+
+/* Estilo para o item de Delivery (segunda lista) */
+.horario_funcionamento ul:last-child {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.horario_funcionamento ul:last-child li {
+  padding: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007bff; /* Cor para Delivery */
+  background-color: #e6f0ff;
+  border-radius: 5px;
+  border: none;
+}
+
+.div_border{
+  padding:20px;
+  border-radius: 16px;
+}
+
+.floating_order_button {
+    /* POSICIONAMENTO FLUTUANTE E FIXO */
+    position: fixed; /* Essencial para que ele flutue na tela */
+    bottom: 30px; /* Distância da parte inferior da tela */
+    right: 30px; /* Distância da lateral direita da tela */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+
+    /* ESTILO E APARÊNCIA */
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #ad0303; /* Cor de fundo verde chamativa */
+    color: white; /* Cor do texto */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 50px; /* Deixa o botão arredondado (estilo pílula) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Sombra para destacá-lo */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Efeito ao passar o mouse */
+.floating_order_button:hover {
+    background-color: #7e0606; /* Escurece um pouco ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de "subir" levemente */
+}
+
+.internasContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imgInterna {
+
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 620px) {
+
+  .opcoes{
+    width: 500px;
+  }
+}
+
+
+@media (max-width: 600px) {
 
   .intro {
     gap: 16px;
@@ -122,20 +487,59 @@ a.secondary {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+
+@media (max-width: 440px) {
+
+  .opcoes{
+    width: 400px;
   }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+  .card{
+    width: 140px;
+    height: 140px;
   }
+  
+.pizza_salgada{
+  width:100px;
+  height:100px;
+  object-fit: cover;
+  padding-top: 5px;
 }
+.pizza_doce{
+  width:130px;
+  height:110px;
+  object-fit: cover;
+  padding-top: 5px;
+}
+.calzone{
+  width:130px;
+  height:110px;
+  object-fit: contain;
+  padding-top: 10px;
+}
+.esfiha_salgada{
+  width:140px;
+  height:110px;
+  padding-top: 20px;
+  object-fit: contain;
+}
+.esfiha_doce{
+  width:110px;
+  height:100px;
+  padding-top: 5px;
+  object-fit: contain;
+}
+.espetinho{
+  width:140px;
+  height:120px;
+  object-fit: contain;
+  padding-top: 5px;
+}
+.churrasco{
+  width:140px;
+  height:110px;
+  object-fit: contain;
+  padding-top: 5px;
+}
+}
+
+
