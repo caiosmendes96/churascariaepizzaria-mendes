@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/churascariaepizzaria-mendes//_next/:path+",
+        "destination": "/churascariaepizzaria-mendes/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
