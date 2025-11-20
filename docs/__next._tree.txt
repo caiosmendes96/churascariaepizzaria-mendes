@@ -15,4 +15,4 @@
 :HL["interna1.jpeg","image"]
 :HL["interna2.jpeg","image"]
 :HL["location_cut.jpeg","image"]
-0:{"buildId":"Y2sa-qDHSM64GGpfTLp-o","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"rpkLgVCmS8T-a0VwgaH6E","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
