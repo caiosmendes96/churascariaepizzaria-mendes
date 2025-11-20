@@ -4,8 +4,8 @@
 :HL["/churascariaepizzaria-mendes/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/churascariaepizzaria-mendes/_next/static/chunks/5bdf8dea6c54aefd.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Anton&family=Smooch+Sans:wght@100..900&display=swap","style"]
-:HL["/pizza_salgada.webp","image"]
-:HL["/pizza_doce.png","image"]
+:HL["pizza_salgada.webp","image"]
+:HL["pizza_doce.png","image"]
 :HL["/calzone.png","image"]
 :HL["/churrasco.png","image"]
 :HL["/espetinho.webp","image"]
@@ -15,4 +15,4 @@
 :HL["/interna1.jpeg","image"]
 :HL["/interna2.jpeg","image"]
 :HL["/location_cut.jpeg","image"]
-0:{"buildId":"nZpdD8-40EUU-Ks_E_8-D","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"4RJfKk1uJ_eW5qplpfMxq","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
