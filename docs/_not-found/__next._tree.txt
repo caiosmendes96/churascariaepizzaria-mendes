@@ -1,3 +1,3 @@
-:HL["/churascariaepizzaria-mendes/_next/static/chunks/9a5ff4e82b063289.css","style"]
+:HL["/churascariaepizzaria-mendes/_next/static/chunks/1b9910b5402b0335.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Anton&family=Smooch+Sans:wght@100..900&display=swap","style"]
-0:{"buildId":"_sQNM-4DJW7Hffi7NuZmM","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"rSTS7_6fh4IoAHBzW-0KL","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
