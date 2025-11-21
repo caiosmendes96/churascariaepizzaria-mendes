@@ -15,4 +15,4 @@
 :HL["interna1.jpeg","image"]
 :HL["interna2.jpeg","image"]
 :HL["location_cut.jpeg","image"]
-0:{"buildId":"rSTS7_6fh4IoAHBzW-0KL","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"zkjCJAXqWzkJqmJsYgcIq","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
